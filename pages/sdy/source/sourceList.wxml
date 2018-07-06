@@ -1,0 +1,27 @@
+<view class='title'>
+  <view class='content'>
+    <text>积分来源</text>
+  </view>
+</view>
+<view class='list' wx:for="{{sourceList}}" wx:for-item="source" wx:key>
+  <view wx:for="{{source.yearList}}" wx:for-item="year" wx:key>
+    <view class='date'>
+      <text>{{year.sourceMonth}} {{source.sourceYear}}</text>
+    </view>
+    <view class='detail' wx:for="{{year.monthList}}" wx:key wx:for-item="detail" bindtap='viewDetail' data-id='{{detail.id}}'>
+      <view class='logo'>
+        <image wx:if="{{detail.shopName=='0'}}" src='../../../images/icons/tblogo.png'></image>
+        <image wx:if="{{detail.shopName=='1'}}" src='../../../images/icons/tmlogo.png'></image>
+        <image wx:if="{{detail.shopName=='2'}}" src='../../../images/icons/sllogo.png'></image>
+        <image wx:if="{{detail.shopName=='3'}}" src='../../../images/icons/jdlogo.png'></image>
+        <image wx:if="{{detail.shopName=='4'}}" src='../../../images/icons/dzlogo.png'></image>
+        <image wx:if="{{detail.shopName=='5'}}" src='../../../images/icons/ydslogo.png'></image>
+      </view>
+      <view class='orderNum'>
+        <text>订单编号：{{detail.orderNumber}}</text>
+        <text>{{detail.finishTime}}</text>
+        <text>¥{{detail.salesAmount}}</text>
+      </view>
+    </view>
+  </view>
+</view>

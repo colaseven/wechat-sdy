@@ -1,0 +1,27 @@
+/* pages/yiguo/auth/login.wxss */
+
+.bg {
+  height: 100%;
+}
+
+.bg image {
+  width: 750rpx;
+  height: 1380rpx;
+  position: relative;
+  margin: 22rpx 0 -80rpx 0rpx;
+}
+
+.bg button {
+  padding: 0rpx 125rpx 1rpx 125rpx;
+  width: 610rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  text-align: center;
+  font-family: PingFang-SC-Medium;
+  font-size: 33rpx;
+  border-radius: 33rpx 33rpx 33rpx 33rpx;
+  color: white;
+  background: #6d35a8;
+  border-color: #6d35a8;
+  top: -250rpx;
+}

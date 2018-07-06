@@ -1,0 +1,22 @@
+<view class='title'>
+  <view class='content'>
+    <text>订单详情</text>
+  </view>
+</view>
+<view class='list'>
+  <view class='orderNum'>
+    <text>订单编号：{{detail.orderNum}}</text>
+  </view>
+  <view class='consignee'>
+    <text>收货人：</text>
+    <text>{{detail.consignee}}</text>
+  </view>
+  <view class='contactWay'>
+    <text>联系方式：</text>
+    <text>{{detail.contactWay}}</text>
+  </view>
+  <view class='address'>
+    <text>收货地址：</text>
+    <text>{{detail.address}}</text>
+  </view>
+</view>

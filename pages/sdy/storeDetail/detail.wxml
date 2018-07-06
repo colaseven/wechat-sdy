@@ -1,0 +1,83 @@
+<import src="../../../wxParse/wxParse.wxml" />
+<view class="container">
+  <view class="swiper-container">
+    <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{banners}}" wx:key="id">
+        <swiper-item>
+          <image src="{{item.pic_url}}_m" class="slide-image" width="355" height="150" mode="aspectFit" lazy-load="true" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="goods-info">
+    <view class="goods-title">{{productName}}</view>
+    <view class="goods-price" style="padding-left:35rpx;">{{credits}} 积分</view>
+    <view class="goods-price" style="color:#999;font-size:30rpx; text-decoration:line-through; font-weight:normal;">¥ {{actualPrice}}</view>
+    <!-- <view class="goods-info-fx">
+      <image src='/images/icons/qd.png' />
+      <button open-type="share">分享</button>
+      <text>分享商品</text>
+    </view> -->
+  </view>
+  <view class="goods-des-info">
+    <view class="label-title">商品详情</view>
+    <view class="goods-text">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+  </view>
+  <view class="footer-box">
+    <view class="contact">
+      <contact-button style="opacity:0;position:absolute;" type="default-dark" session-from="weapp" size="27"></contact-button>
+      <view style='position:absolute;bottom:10rpx;'> 客服 </view>
+    </view>
+    <view class="now-buy" bindtap="tobuy">立即兑换</view>
+    
+  </view>
+
+  <view class="show-popup" hidden="{{hideShopPopup}}">
+    <view class="popup-mask" bindtap="closePopupTap"></view>
+    <view class="popup-contents">
+      <view class="pop-goods-info">
+        <view class="pop-img-box">
+          <image src="../../../images/icons/ydslogo.png" class="goods-thumbnail" />
+        </view>
+        <view class="pop-goods-des">
+          <view class="pop-goods-title">{{productName}}</view>
+          <view class="pop-goods-price">{{credits}} 积分</view>
+        </view>
+        <view class="pop-goods-close" bindtap="closePopupTap"></view>
+      </view>
+      <view class="buy-num-box">
+        <view class="num-label">购买数量</view>
+        <view class="num-box">
+          <view class="num-jian {{buyNumber == buyNumMin ? 'hui': ''}}" bindtap="numJianTap">-</view>
+          <view class="num-input">
+            <input type="number" value="{{buyNumber}}" disabled/>
+          </view>
+          <view class="num-jia {{buyNumber== buyNumMax ? 'hui': ''}}" bindtap="numJiaTap">+</view>
+        </view>
+      </view>
+      <view class="popup-join-btn" bindtap="buyNow">
+        立即兑换
+      </view>
+    </view>
+  </view>
+  <view class='convert'>
+    <view class='convertContent' hidden='{{creditsConvert}}'>
+      <view class='redeemCode'>
+        <text>券码：</text>
+        <text style='font-weight:bold; font-size:26rpx;' name="redeemCode">{{redeemCode}}</text>
+        <button plain='true' bindtap='copyRedeemCode'>复制</button>
+      </view>
+      <view class='explain'>
+        <text>温馨提示：</text>
+        <text>复制此券码后请于客服联系，进行兑换实际折扣券码。</text>
+      </view>
+      <view class='cancelBut'>
+        <button plain='true' bindtap='cancel'>确认复制成功并退出？</button>
+      </view>
+    </view>
+  </view>
+  <view class='bgs' catchtouchmove='true' style='display:{{bgsStatus}}; '>
+  </view>
+</view>

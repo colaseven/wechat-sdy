@@ -1,0 +1,4 @@
+<view class="bg">
+  <image src='../../../images/icons/authbg.png'></image>
+  <button id='btns' plain='true' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>

@@ -1,0 +1,86 @@
+<view id='page'>
+  <view class="userInfo">
+    <view class='user'>
+      <view class='info'>
+        <image class='infoimgs' src='../../../images/icons/headportrait.png'> </image>
+        <view class="user-pic">
+          <image src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <text class='user-name'>{{userInfo.nickName}}</text>
+        <view class='gradeText'>
+          <text>经验值：<text>{{empirical}}</text></text>
+          <text>　距离升级：<text>{{upgrade}}</text></text>
+        </view>
+        <view class='levelText'>
+          <text>Lv.<text>{{level}}</text></text>
+        </view>
+        <view class='probar'>
+          <progress class='mar' percent='{{progressOne}}' active color='{{activeColor}}'></progress>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='section'>
+    <view class='sectionImage'>
+      <text>会员等级</text>
+      <view class='canvas' style='display:{{gradeStatus}};'>
+        <canvas id='canvas' style='width:{{w}}px;left:{{lf}}px' canvas-id='myCanvas'></canvas>
+      </view>
+      <view class='levelStart'>
+        <text>Lv.{{levelStart}}</text>
+      </view>
+      <view class='levelEnd'>
+        <text>Lv.{{levelEnd}}</text>
+      </view>
+      <view class='creditsStart'>
+        <text>{{creditsStart}}积分</text> </view>
+      <view class='creditsEnd'>
+        <text>{{creditsEnd}}积分</text> </view>
+    </view>
+    <view class='binding'>
+      <button plain='true' bindtap='bindingAccount'>绑定账号</button>
+    </view>
+  </view>
+  <view class='bindingExplain'>
+    <text>
+    支持绑定淘宝、京东、有赞等平台账户
+    </text>
+  </view>
+  <view class='foot'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-box" id="top">
+      <block wx:for-items="{{banner}}" wx:key="index">
+        <swiper-item>
+          <image class="slide-image" src="{{item.pic_url}}" bindtap="swipclick" data-id='{{item.id}}' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view id='bindingAccount' style='display:{{bindingStatus}};'>
+      <view class='phonenumber'>
+        <image src='../../../images/icons/phonenumber.png'></image>
+        <view class='phonePlaceholder'>
+          <input type="number" name="phonenumber" bindinput="watchPhone" placeholder-class="placeholder" placeholder="请输入淘宝京东等平台下单手机号码" maxlength="11" />
+        </view>
+      </view>
+      <view class='authcode'>
+        <image src='../../../images/icons/authcode.png'></image>
+        <view class='authcodePlaceholder'>
+          <input bindinput="saveauthcode" name="authcode" placeholder-class='placeholder' placeholder="请输入验证码" type="number" maxlength="6" />
+        </view>
+        <view class='SMSCode'>
+          <button plain='true' bindtap='snsBtn' disabled='{{snsBtnStyle}}'>{{SMSText}}</button>
+        </view>
+      </view>
+      <view class=' bindingPhone'>
+        <button plain='true' formType="submit">绑定</button>
+      </view>
+      <view class='bindingPhoneExplain'>
+        <text>手机号码为平台下单时联系号码，一个账号最多可绑定5个手机号码
+积分可叠加</text>
+      </view>
+    </view>
+  </form>
+  <view class='bgs' catchtouchmove='true' bindtap='cancel' style='display:{{bindingStatus}}; '>
+  </view>
+</view>

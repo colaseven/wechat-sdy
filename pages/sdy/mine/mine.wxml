@@ -1,0 +1,32 @@
+<view class="mine-box">
+  <view class="user">
+    <view class="user-pic">
+      <image src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="user-name">{{userInfo.nickName}}</view>
+    <view class='levelText'>
+      <text>等级<text>{{level}}</text></text>
+      <text>积分<text>{{credits}}</text></text>
+    </view>
+  </view>
+  <view class='binding'>
+    <button plain='true' bindtap="viewDetail">查看已绑定账户</button>
+  </view>
+  <view class='tableviewcell' bindtap='creditsSource'>
+    <text>积分来源</text>
+    <image src='../../../images/icons/mine01.png'></image>
+  </view>
+  <view class='tableviewcell' bindtap='creditsUse'>
+    <text>积分使用</text>
+    <image src='../../../images/icons/mine02.png'></image>
+  </view>
+</view>
+<view class='details'>
+  <view class='detail' style='display:{{bindingDetailStatus}};' wx:for="{{bindingDetails}}" wx:key>
+    <view class='detailText'>
+      <text>{{item}}</text>
+    </view>
+  </view>
+</view>
+<view class='bgs' catchtouchmove='true ' bindtap='cancel' style='display:{{bindingDetailStatus}}; '>
+</view>

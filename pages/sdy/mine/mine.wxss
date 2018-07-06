@@ -1,0 +1,220 @@
+.mine-box {
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.user {
+  height: 300rpx;
+  width: 100%;
+}
+
+.user-pic {
+  height: 300rpx;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.user-name {
+  top: -78%;
+  margin-left: 33%;
+  white-space: nowrap;
+  position: relative;
+  font-family: PingFang-SC-Medium;
+  font-size: 40rpx;
+}
+
+.levelText {
+  margin-left: 30%;
+  position: relative;
+  top: -66%;
+}
+
+.levelText text {
+  margin: 10px;
+  font-family: PingFang-SC-Regular;
+  font-size: 24rpx;
+  color: #737373;
+}
+
+.levelText text text {
+  margin: 10px;
+  font-weight: bold;
+  color: black;
+  font-family: ArialRoundedMTBold;
+  font-size: 36rpx;
+}
+
+.binding {
+  height: 210rpx;
+  display: flex;
+  align-items: center;
+}
+
+.binding button {
+  width: 500rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  background: #6d35a8;
+  border-radius: 33rpx 33rpx 33rpx 33rpx;
+  color: white;
+  font-size: 33rpx;
+  text-align: center;
+  font-family: PingFang-SC-Medium;
+  border-color: #6d35a8;
+}
+
+.tableviewcell {
+  border-bottom: 1rpx solid #ddd;
+  color: #666;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+  position: relative;
+}
+
+/*icon*/
+
+.tableviewcell image {
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  position: absolute;
+  right: 40rpx;
+}
+
+/*text*/
+
+.tableviewcell text {
+  font-size: 36rpx;
+  color: black;
+  font-family: PingFang-SC-Medium;
+  text-indent: 40rpx;
+}
+
+/*button*/
+
+.logout {
+  margin-top: 10%;
+}
+
+.user-text {
+  display: flex;
+  height: 100rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #008842;
+}
+
+.user-text text {
+  display: flex;
+  justify-content: center;
+  width: 300rpx;
+}
+
+.user image {
+  height: 260rpx;
+  width: 260rpx;
+  border-radius: 150rpx;
+  transform: scale(0.6);
+}
+
+.btn {
+  flex: 1;
+  width: 100%;
+}
+
+.btn image {
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.btn ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn ul li {
+  width: 30%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer {
+  height: 100%;
+}
+
+button {
+  width: 600rpx;
+  margin: 0 auto;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+label view {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+label view input {
+  flex: 1;
+  border-bottom: 1px solid #aaa;
+}
+
+.details {
+  width: 540rpx;
+  position: fixed;
+  z-index: 99;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  left: 105rpx;
+  top: 360rpx;
+  overflow: hidden;
+}
+
+.detail {
+  line-height: 96rpx;
+  width: 540rpx;
+  height: 96rpx;
+  position: relative;
+  z-index: 98;
+  background-color: white;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.detailText {
+  margin-top: 1%;
+  text-align: center;
+}
+
+.detailText text {
+  font-family: PingFang-SC-Regular;
+  font-size: 41rpx;
+  padding: 0 136rpx 0 135rpx;
+}
+
+.bgs {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  background: black;
+  opacity: 0.8;
+  z-index: 11;
+}

@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/sdy/storeDetail/detail",
+    "pages/sdy/storeHome/products",
+   
+    "pages/sdy/storePay/payOrder",
+    "pages/sdy/auth/login",
+    "pages/sdy/index/index",
+    "pages/sdy/integral/exchange",
+    "pages/sdy/mine/mine",
+    "pages/sdy/source/sourceList",
+    "pages/sdy/source/sourceDetail",
+    "pages/sdy/use/useList",
+    "pages/sdy/use/useDetail",
+    "pages/sdy/index/bannerDetail"
+  ],
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#6F28AE",
+    "backgroundColor": "#F9F9F9",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/sdy/index/index",
+        "iconPath": "images/icons/btn-tabs_01.png",
+        "selectedIconPath": "images/icons/btn-tabs_07.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/sdy/storeHome/products",
+        "iconPath": "images/icons/btn-tabs_03.png",
+        "selectedIconPath": "images/icons/btn-tabs_08.png",
+        "text": "积分商城"
+      },
+      {
+        "pagePath": "pages/sdy/integral/exchange",
+        "iconPath": "images/icons/btn-tabs_03.png",
+        "selectedIconPath": "images/icons/btn-tabs_08.png",
+        "text": "积分兑换"
+      },
+      {
+        "pagePath": "pages/sdy/mine/mine",
+        "iconPath": "images/icons/btn-tabs_06.png",
+        "selectedIconPath": "images/icons/btn-tabs_10.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6F28AE",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  }
+}

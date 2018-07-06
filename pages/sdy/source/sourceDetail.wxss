@@ -1,0 +1,113 @@
+.title {
+  height: 117rpx;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.content {
+  width: 164rpx;
+  height: 42rpx;
+  padding: 39rpx 546rpx 39rpx 40rpx;
+}
+
+.content text {
+  font-family: PingFang-SC-Bold;
+  font-size: 41rpx;
+}
+
+.list {
+  height: auto;
+}
+
+.orderNum {
+  width: 700rpx;
+  height: 60rpx;
+  line-height: 24rpx;
+  padding: 17rpx 0 19rpx 38rpx;
+}
+
+.orderNum text {
+  font-family: PingFang-SC-Medium;
+  font-size: 25rpx;
+}
+
+.consignee {
+  width: 700rpx;
+  padding: 17rpx 0 19rpx 39rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+}
+
+.consignee text:nth-child(1) {
+  font-family: PingFang-SC-Medium;
+  font-size: 29rpx;
+}
+
+.consignee text:nth-child(2) {
+  font-family: PingFang-SC-Regular;
+  font-size: 29rpx;
+}
+
+.consignee:after {
+  content: '';
+  position: absolute;
+  background: #eee;
+  width: 90%;
+  height: 1rpx;
+  left: 5%;
+  margin-top: 63rpx;
+}
+
+.contactWay {
+  width: 700rpx;
+  padding: 17rpx 0 19rpx 39rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+}
+
+.contactWay text:nth-child(1) {
+  font-family: PingFang-SC-Medium;
+  font-size: 29rpx;
+}
+
+.contactWay text:nth-child(2) {
+  font-family: PingFang-SC-Regular;
+  font-size: 29rpx;
+}
+
+.contactWay:after {
+  content: '';
+  position: absolute;
+  background: #eee;
+  width: 90%;
+  height: 1rpx;
+  left: 5%;
+  margin-top: 63rpx;
+}
+
+.address {
+  width: 700rpx;
+  padding: 17rpx 0 19rpx 39rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+}
+
+.address text:nth-child(1) {
+  font-family: PingFang-SC-Medium;
+  font-size: 29rpx;
+}
+
+.address text:nth-child(2) {
+  font-family: PingFang-SC-Regular;
+  font-size: 29rpx;
+}
+
+.address:after {
+  content: '';
+  position: absolute;
+  background: #eee;
+  width: 90%;
+  height: 1rpx;
+  left: 5%;
+  margin-top: 87rpx;
+}

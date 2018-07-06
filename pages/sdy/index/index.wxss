@@ -1,0 +1,491 @@
+/**index.wxss**/
+
+#page {
+  width: 100%;
+  height: 100%;
+  font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+/*导航*/
+
+.swiper-box {
+  height: 230rpx;
+}
+
+.slide-image {
+  display: block;
+  height: 230rpx;
+  width: 100%;
+}
+
+.userInfo {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.user {
+  background-color: #f6f6f6;
+  width: 660rpx;
+  height: 330rpx;
+  margin: 45rpx 45rpx;
+  border-radius: 20rpx;
+}
+
+.info {
+  width: 532rpx;
+  height: 265rpx;
+  padding: 35rpx 64rpx 30rpx 64rpx;
+  position: relative;
+}
+
+.infoimgs {
+  width: 241rpx;
+  height: 164rpx;
+  padding: 0 146rpx 101rpx 145rpx;
+  z-index: 8;
+  position: relative;
+}
+
+.gradeText {
+  width: auto;
+  height: 25rpx;
+  padding: 21rpx 85rpx 55rpx 85rpx;
+  margin-top: -22%;
+  text-align: center;
+}
+
+.gradeText text {
+  font-family: PingFang-SC-Medium;
+  font-size: 25rpx;
+  color: #666;
+}
+
+.gradeText text text {
+  font-family: PingFang-SC-Medium;
+  font-size: 29rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.probar {
+  width: 532rpx;
+  height: 36rpx;
+  margin-top: -1%;
+  margin-left: 18%;
+}
+
+.levelText {
+  display: flex;
+  align-items: center;
+  color: #38237d;
+  font-weight: bold;
+  margin-top: -8%;
+  float: left;
+}
+
+.levelText text {
+  font-family: ArialRoundedMTBold;
+  font-size: 37rpx;
+  font-style: italic;
+}
+
+.levelText text text {
+  font-family: ArialRoundedMTBold;
+  font-size: 50rpx;
+  font-style: italic;
+}
+
+.mar {
+  border-radius: 100px;
+  overflow: hidden;
+  position: absolute;
+  width: 57%;
+}
+
+.section text {
+  font-family: PingFang-SC-Medium;
+  font-size: 37rpx;
+}
+
+.section {
+  height: 537rpx;
+  width: auto;
+  margin-top: -6%;
+}
+
+.sectionImage {
+  height: 447rpx;
+  width: auto;
+  padding: 69rpx 89rpx 21rpx 89rpx;
+  text-align: center;
+  position: relative;
+}
+
+.sectionImage text {
+  font-family: PingFang-SC-Medium;
+  font-size: 37rpx;
+}
+
+/*四个菜单*/
+
+.menueview {
+  display: flex;
+  background-color: #fff;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.menue-1 {
+  flex: 1;
+}
+
+.menueimg {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.menue-image {
+  height: 45px;
+  width: 45px;
+  margin: 0 auto;
+}
+
+.menuetext {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+}
+
+/*hg-*/
+
+.hg-container {
+  height: 400rpx;
+  width: 100%;
+  margin: 4% 4%;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px #ccc;
+  /* position: relative; *//* top: 20rpx; */
+}
+
+.grade {
+  height: 200px;
+}
+
+.gooditem {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.hg-title {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  color: #008842;
+}
+
+.imgview {
+  flex: 1;
+  border: 1px solid #eee;
+}
+
+.imgview image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.hot-container {
+  background: #eee;
+}
+
+.hot-title {
+  padding: 10px;
+  font-size: 16px;
+  color: #f55030;
+  background: #fff;
+}
+
+.hot-imgview {
+  margin-top: 10px;
+}
+
+.hot-imgview image {
+  width: 100%;
+  height: 280rpx;
+}
+
+/*footer*/
+
+.footer {
+  text-align: center;
+  height: 200rpx;
+}
+
+.footer view {
+  width: 700rpx;
+}
+
+.footer text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.dashBoard {
+  margin-top: 50px;
+  width: 305px;
+  height: 280px;
+}
+
+.canvas {
+  position: absolute;
+  left: 0rpx;
+  width: 100%;
+}
+
+#canvas {
+  height: 350rpx;
+}
+
+.user-pic {
+  position: absolute;
+  width: 241rpx;
+  height: 165rpx;
+  padding-left: 145rpx;
+  text-align: center;
+  top: 30rpx;
+  z-index: 1;
+}
+
+.user-pic image {
+  position: relative;
+  width: 140rpx;
+  height: 113rpx;
+  border-radius: 50%;
+  z-index: 1;
+  margin-top: 7.6%;
+}
+
+.user-name {
+  color: #fff;
+  position: absolute;
+  width: 241rpx;
+  margin-left: 145rpx;
+  text-align: center;
+  top: 144rpx;
+  z-index: 9;
+  display: inherit;
+  font-size: 25rpx;
+  font-family: PingFang-SC-Medium;
+}
+
+.levelStart {
+  width: 60rpx;
+  height: 30rpx;
+  margin-left: 2%;
+  margin-top: 47%;
+}
+
+.levelEnd {
+  width: 60rpx;
+  height: 30rpx;
+  margin-left: 86%;
+  margin-top: -5%;
+}
+
+.levelStart text {
+  font-family: ArialRoundedMTBold;
+  font-size: 29rpx;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.levelEnd text {
+  font-family: ArialRoundedMTBold;
+  font-size: 29rpx;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.creditsStart {
+  width: 120rpx;
+  height: 23rpx;
+  margin-left: -2%;
+  margin-top: 4%;
+}
+
+.creditsEnd {
+  width: 120rpx;
+  height: 23rpx;
+  margin-left: 82%;
+  margin-top: -4%;
+}
+
+.creditsStart text {
+  font-family: ArialMT;
+  font-size: 24rpx;
+}
+
+.creditsEnd text {
+  font-family: ArialMT;
+  font-size: 24rpx;
+}
+
+.binding button {
+  padding: 0rpx 125rpx 1rpx 125rpx;
+  width: 500rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  text-align: center;
+  font-family: PingFang-SC-Medium;
+  font-size: 33rpx;
+  border-radius: 33rpx 33rpx 33rpx 33rpx;
+  color: white;
+  background: #6d35a8;
+  border-color: #6d35a8;
+}
+
+.bindingExplain {
+  width: 351rpx;
+  height: 21rpx;
+  padding: 30rpx 200rpx 50rpx 200rpx;
+}
+
+.bindingExplain text {
+  font-family: PingFang-SC-Regular;
+  font-size: 20rpx;
+  color: #c6c6c6;
+}
+
+.foot {
+  padding: 50rpx 0 0 0;
+}
+
+.combox {
+  width: 340rpx;
+  height: 340rpx;
+}
+
+#bindingAccount {
+  width: 660rpx;
+  height: 470rpx;
+  position: fixed;
+  top: 350rpx;
+  z-index: 99;
+  background-color: white;
+  border-radius: 20rpx 20rpx 20rpx 20rpx;
+  left: 45rpx;
+}
+
+.bgs {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0rpx;
+  background: black;
+  opacity: 0.8;
+  z-index: 11;
+}
+
+#bindingAccount image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.phonenumber {
+  padding: 80rpx 0 0 80rpx;
+  height: 100rpx;
+}
+
+.phonenumber:after {
+  content: ''; /*CSS伪类用法*/
+  position: absolute; /*定位背景横线的位置*/
+  top: 177rpx;
+  left: 10%;
+  background: #ddd; /*宽和高做出来的背景横线*/
+  width: 80%;
+  height: 1px;
+}
+
+.phonenumber input {
+  float: left;
+}
+
+.phonenumber image {
+  float: left;
+}
+
+.authcode input {
+  width: 200rpx;
+}
+
+.authcode image {
+  float: left;
+}
+
+.placeholder {
+  font-family: PingFang-SC-Regular;
+  font-size: 25rpx;
+  color: #c6c6c6;
+  text-align: left;
+}
+
+.authcode {
+  padding: 40rpx 0 0rpx 80rpx;
+  height: 100rpx;
+}
+
+.bindingPhone button {
+  width: 520rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  font-family: PingFang-SC-Medium;
+  font-size: 33rpx;
+  border-radius: 33rpx 33rpx 33rpx 33rpx;
+  color: white;
+  background: #6d35a8;
+  border-color: #6d35a8;
+}
+
+.bindingPhoneExplain {
+  width: 501rpx;
+  height: 34rpx;
+  font-family: PingFang-SC-Regular;
+  font-size: 16rpx;
+  color: #c6c6c6;
+  text-align: center;
+  padding: 10rpx 79rpx 40rpx 80rpx;
+}
+
+.SMSCode button {
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 190rpx;
+  font-family: PingFang-SC-Regular;
+  font-size: 25rpx;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  border-color: #6d35a8;
+  color: #6d35a8;
+  float: right;
+}
+
+.SMSCode {
+  padding: 0rpx 70rpx 0 20rpx;
+  margin-top: -11%;
+}
+
+.phonePlaceholder {
+  padding: 0rpx 0rpx 0 90rpx;
+}
+
+.authcodePlaceholder {
+  padding: 0rpx 0rpx 0 90rpx;
+}
